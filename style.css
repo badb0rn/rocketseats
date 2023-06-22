@@ -6,19 +6,22 @@
 }
 */
 body{
+    width: 100%;
+    margin: 0px;
     background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
 }
 
 .container{
-    width: 360px;
-    height: 712px;
+    text-align: center;
+    width: 588px;
     border: 1px solid red;
-    margin-left: auto;
-    margin-right: auto;
-
+    margin: auto;
 }
 
-.container img{
-    width: 100px;
-    height: 100px;
+.top{
+    text-align: center;
+}
+
+.top img{
+    width: 112px;
 }
