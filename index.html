@@ -4,21 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <title>Projeto</title>
 </head>
 <body>
-    <h1>Projeto</h1>
     <div class="container">
-        <div class="top">
-            <img src="assets/avatar.png" alt="profile picture">
-            <a href="https://www.instagram.com/badb0rn" target="_blank">@badborn</a>
+        <div id="profile">
+            <img 
+            src="assets/avatar.png" alt="profile picture">
+            <p>@badborn</p>
         </div>
-        <div class="bottom">
-            <a href="www.google.com" target="_blank">Inscreva-se</a>
-            <a href="www.google.com" target="_blank">baixe o meu cv</a>
-            <a href="www.google.com" target="_blank">tararam</a>
-            <a href="www.google.com" target="_blank">Tananam</a>
+        <div id="switch" onclick="toggleMode()">
+            <button></button>
+            <span></span>
         </div>
+        <ul>
+            <li>
+            <a href="#">Inscrever-se na newsletter</a>
+            </li>
+            <li>
+            <a href="#">Baixar meu cv</a>
+            </li>
+            <li>
+            <a href="#">Veja meu portifólio</a>
+            </li>
+            <li>
+            <a href="#">Contatos</a>
+            </li>
+        </ul>
+        <div id="social-links">
+            <a href="" target="_blank">
+            <ion-icon name="logo-github" href="#"></ion-icon>
+            </a>
+            <a href="" target="_blank">
+            <ion-icon name="logo-twitter" href="#"></ion-icon>
+            </a>
+            <a href="" target="_blank">
+            <ion-icon name="logo-instagram" href="#"></ion-icon>
+            </a>
+            <a href="" target="_blank">
+            <ion-icon name="logo-linkedin" href="#"></ion-icon>
+            </a>
+        </div>
+        <footer>
+            feito com amor ♥ pela <a href="http://rocketseat.com.br">Rocketseat</a>
+        </footer>
     </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="./script.js"></script>
 </body>
 </html>
