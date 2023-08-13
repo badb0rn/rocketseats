@@ -6,7 +6,7 @@
   
   :root {
     --text-color: white;
-    --bg-color: black;
+    --bg-color: linear-gradient(135deg, #1f1c2c, #504c64, #928dab);
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -17,7 +17,7 @@
   
   .light {
     --text-color: black;
-    --bg-color: white;
+    --bg-color: linear-gradient(to right, #cc95c0, #dbd4b4, #7aa1d2);
     --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -27,18 +27,12 @@
   }
   
   body {
-    /* o background abaixo deveria utilizar a variável --bg-color para alterar a cor do background conforme a alteração do toggle
-    porém não está funcionando, já procurei dentro do html e css algo que pudesse estar interferindo na aplicação do estilo do bg
-    porém não consegui encontrar :(
-
-    background: var(--bg-color);     <-----
-    */
-    background: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+    background: var(--bg-color);
     height: 100vh;
   }
   
   body * {
-    font-family: "Inter", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: var(--text-color);
   }
   
@@ -177,17 +171,6 @@
     padding: 24px 0;
     text-align: center;
     font-size: 14px;
-  }
-  
-  /* media queries */
-  @media (min-width: 700px) {
-    :root {
-      --bg-color: url(./assets/bg-desktop.jpg);
-    }
-  
-    .light {
-      --bg-color: url(./assets/bg-desktop-light.jpg);
-    }
   }
   
   /* animation */
